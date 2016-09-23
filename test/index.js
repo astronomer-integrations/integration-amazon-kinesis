@@ -27,7 +27,7 @@ describe('Amazon Kinesis', function() {
             test
             .set(settings)
             .track(json.input)
-            .end(function(err, res){
+            .end(function(err, res) {
                 if (err) return done(err);
                 done();
             });
