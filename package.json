@@ -1,0 +1,33 @@
+{
+  "name": "@astronomerio/integration-amazon-kinesis",
+  "version": "1.0.0",
+  "description": "A server side integration to that will forward events to an Amazon Kinesis stream.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha test/index.js -r dotenv/config --timeout 20s -r should -r spec --inline-diffs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astronomerio/integration-amazon-kinesis.git"
+  },
+  "author": "Alois Barreras",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/astronomerio/integration-amazon-kinesis/issues"
+  },
+  "homepage": "https://github.com/astronomerio/integration-amazon-kinesis#readme",
+  "dependencies": {
+    "aws-sdk": "^2.6.3",
+    "dotenv": "^2.0.0",
+    "segmentio-integration": "^5.0.1",
+    "segmentio-integration-tester": "^2.0.3",
+    "uid": "0.0.2"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "dotenv": "^2.0.0",
+    "mocha": "^3.0.2",
+    "should": "^11.1.0",
+    "spec": "^1.0.1"
+  }
+}
